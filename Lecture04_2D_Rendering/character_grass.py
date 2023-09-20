@@ -12,6 +12,13 @@ y=90
 
 def run_rectagle():
     print("rectagle")
+
+    #bottom->right
+    for x in range(50,750,10):
+        clear_canvas_now()
+        grass.draw_now(400, 30)
+        character.draw_now(x, y)
+        delay(0.02)
     pass
 
 def run_circle():
@@ -26,7 +33,7 @@ def run_circle():
 
 while (True):
     run_rectagle()
-    run_circle()
+    #run_circle()
     break
 
 
