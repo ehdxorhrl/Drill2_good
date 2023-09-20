@@ -11,16 +11,18 @@ x=0
 y=90
 
 def run_rectagle():
-    clear_canvas_now()
-    grass.draw_now(400, 30)
-    character.draw_now(400, 90)
-    delay(1)
     print("rectagle")
     pass
 
 def run_circle():
-    print("circle")
-    pass
+    cx,cy,r=400,300,200
+    for deg in range(0,360,5):
+        x=cx+r*math.cos(deg/360*2*math.pi)
+        y=cy+r*math.sin(deg/360*2*math.pi)
+        clear_canvas_now()
+        grass.draw_now(400, 30)
+        character.draw_now(x, y)
+        delay(0.02)
 
 while (True):
     run_rectagle()
