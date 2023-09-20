@@ -18,13 +18,12 @@ def render_all(_x,_y):
     delay(0.02)
 
 def run_rectagle():
-    print("rectagle")
-
     global x
     global y
     
     #bottom->right
-    for x in range(50,750+10,10):
+    while(x<750):
+        x = x + 10
         render_all(x,y)
 
     for y in range(90,550+10,10):
