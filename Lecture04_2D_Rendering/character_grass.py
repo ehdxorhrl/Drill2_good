@@ -17,7 +17,6 @@ def render_all(_x,_y):
     character.draw_now(_x, _y)
     delay(0.02)
 
-
 def run_rectagle():
     print("rectagle")
 
@@ -36,10 +35,13 @@ def run_rectagle():
 
     for y in range(550,90-10,-10):
         render_all(x,y)
+        
+    for x in range(50,400+10,10):
+        render_all(x,y)
 
 def run_circle():
-    cx,cy,r=400,300,200
-    for deg in range(0,360,5):
+    cx,cy,r=400,345,255
+    for deg in range(270,630,5):
         x=cx+r*math.cos(deg/360*2*math.pi)
         y=cy+r*math.sin(deg/360*2*math.pi)
         clear_canvas_now()
@@ -49,8 +51,6 @@ def run_circle():
 
 while (True):
     run_rectagle()
-    #run_circle()
-    break
-
+    run_circle()
 
 close_canvas()
