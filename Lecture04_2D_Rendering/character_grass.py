@@ -11,6 +11,10 @@ x=0
 y=90
 
 def run_rectagle():
+    clear_canvas_now()
+    grass.draw_now(400, 30)
+    character.draw_now(400, 90)
+    delay(1)
     print("rectagle")
     pass
 
