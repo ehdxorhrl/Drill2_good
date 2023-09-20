@@ -34,6 +34,9 @@ def run_rectagle():
     for x in range(750,50-10,-10):
         render_all(x,y)
 
+    for y in range(550,90-10,-10):
+        render_all(x,y)
+
 def run_circle():
     cx,cy,r=400,300,200
     for deg in range(0,360,5):
